@@ -6,21 +6,27 @@ import { LoginpangeComponent } from './loginmange/loginpange.component';
 export const loginmanageroute = RouterModule.forRoot(
     [
         {
+            // 默认访问页面
+            path: '',
+            component:LoginpangeComponent,
+        },
+        {
             // 登录页面
             path: 'login',
-            loadChildren: () => import('./loginmange/loginmange.model').then(m => m.loginmanagemodel),
-         
-            
+            component:LoginpangeComponent,
         },
         
         {
-            // 登录页面
-            path: 'home-page',
-            loadChildren: () => import('./home-page/home-page.model').then(m => m.HomePageModule),
-         
-            
+            // 首页
+            path: 'home',
+            component:HomePageComponent
         },
-      
+        {
+            // 人员操作页面
+            path: 'useoption',
+            loadChildren:() => import('./use-option/use-option.module').then(m => m.UseOptionModule),
+
+        },
     ],
     { useHash: true }
 );

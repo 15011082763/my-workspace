@@ -5,11 +5,11 @@ const routes: Routes = [];
 
 @NgModule({
     imports: [
-        RouterModule.forChild([
-            { path: '**', component: HomePageComponent },
+        // RouterModule.forChild([
+        //     { path: '**', component: HomePageComponent },
 
-            {path:'home-page',component:HomePageComponent}
-        ]),
+        //     {path:'home',component:HomePageComponent}
+        // ]),
     ],
 
     declarations: [HomePageComponent]

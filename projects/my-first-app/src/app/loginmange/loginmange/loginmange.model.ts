@@ -6,10 +6,10 @@ import { LoginpangeComponent } from './loginpange.component';
 
 @NgModule({
     imports: [
-        RouterModule.forChild([
-            { path: '**', component: LoginpangeComponent },
-            {path:'menu',component:HomePageComponent}
-        ]),
+        // RouterModule.forChild([
+        //     { path: '**', component: LoginpangeComponent },
+        //     {path: 'menu',component:HomePageComponent}
+        // ]),
     ],
     declarations: [LoginpangeComponent]
 })
