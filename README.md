@@ -31,3 +31,9 @@ ng serve
 
 ## components启动
 npm run ng-zj
+
+## components build
+zj-build-prod
+
+## my-first-app build
+first-build-prod
